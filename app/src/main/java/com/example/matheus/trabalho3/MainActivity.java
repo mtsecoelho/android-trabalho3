@@ -21,12 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private ArrayList<String> listItems;
     private List<Produto> produtos;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        produtoDAO = new ProdutoDAO(this);
+    public void updateListView() {
         listItems = new ArrayList<>();
         produtos = new ArrayList<>();
 
@@ -43,6 +38,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 listItems);
 
         listview.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        produtoDAO = new ProdutoDAO(this);
+
+        updateListView();
 
         Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
