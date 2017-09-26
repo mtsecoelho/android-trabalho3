@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matheus.trabalho3.CadastroActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <RadioGroup
+        android:layout_width="129dp"
+        android:layout_height="186dp"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="74dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Teste 0" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Teste 1" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Teste 2" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="Teste 3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="Cadastra"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="33dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="12dp"
+        android:text="Exclui"
+        android:layout_alignEnd="@+id/editText" />
+</RelativeLayout>
